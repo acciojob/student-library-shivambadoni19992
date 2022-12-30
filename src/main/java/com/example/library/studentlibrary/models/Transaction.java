@@ -2,10 +2,10 @@ package com.example.library.studentlibrary.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+
 import lombok.Setter;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -48,7 +48,7 @@ public class Transaction {
     private Date transactionDate;
 
     public Transaction(){
-        
+
     }
 }
 

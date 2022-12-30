@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "books.max_allowed",
+    "type": "java.lang.String",
+    "description": "A description for 'books.max_allowed'"
+  },
+  {
+    "name": "books.max_allowed_days",
+    "type": "java.lang.String",
+    "description": "A description for 'books.max_allowed_days'"
+  },
+  {
+    "name": "books.fine.per_day",
+    "type": "java.lang.String",
+    "description": "A description for 'books.fine.per_day'"
+  }
+]}

@@ -2,11 +2,11 @@ package com.example.library.studentlibrary.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+
 import lombok.Setter;
-import lombok.Data;
+
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@Data
+
 
 public class Author {
 
@@ -36,7 +36,15 @@ public class Author {
     public Author(){
 
     }
+
+    public Author(String name, String email, int age, String country) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.country = country;
+    }
     
+
     
 }
 
