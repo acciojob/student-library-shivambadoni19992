@@ -56,7 +56,7 @@ public class TransactionService {
             throw new Exception("Book is either unavailable or not present");
         } else if (cardRepository5.findById(cardId) == null || card.getCardStatus().equals(status)) {
             throw new Exception("Card is invalid");
-        } else if (book.size() >= max_allowed_books) {
+        } else if (book.size() >= 3) {
             throw new Exception("Book limit has reached for this card");
         } else {
             Transaction t = new Transaction();
