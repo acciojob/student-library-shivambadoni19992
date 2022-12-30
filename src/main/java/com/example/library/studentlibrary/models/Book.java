@@ -4,6 +4,7 @@ package com.example.library.studentlibrary.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,10 +14,10 @@ import java.util.List;
 
 
 @Entity
-@AllArgsConstructor
+@Data
 @Getter
 @Setter
-@NoArgsConstructor
+
 public class Book {
 
     @Id
@@ -46,6 +47,10 @@ public class Book {
     @JsonIgnoreProperties("book")
     private List<Transaction> transactions;
 
+    public Book() {
+    }
+
+   
    
 }
 
