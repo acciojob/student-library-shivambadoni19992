@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
@@ -20,6 +20,6 @@ jobs:
           cache: maven
       - name: Junit Assignment Action
         id: assignmentAction
-        uses: acciojob/junit-github-action@v0.7
+        uses: acciojob/junit-github-action@v0.10
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
